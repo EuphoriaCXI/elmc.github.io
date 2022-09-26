@@ -11,6 +11,13 @@
   src: url(./font/Proxima\ Nova\ Semibold.otf);
 }
 
+@font-face {
+  font-family: "Promixa Nova Heavy";
+  src: url(./font/proxima-nova/Proxima\ Nova\ Bold.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* ======
 CSS RESET
 CREDIT TO: https://www.joshwcomeau.com/css/custom-css-reset/ 
@@ -108,16 +115,12 @@ ul li {
 /* - HEADER - */
 
 /* ======
-NAVAGATION
+NAVAGATION UTILITES
 ====== */
-.header-wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: "Source Sans Pro";
-}
 
-h1 {
-  font-family: "Promixa Nova";
+img {
+  width: 45%;
+  margin-left: -1.1rem;
 }
 
 nav {
@@ -128,7 +131,15 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem;
+}
+
+/* ======
+NAVAGATION
+====== */
+.header-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .menu {
@@ -169,13 +180,14 @@ nav {
 
 .hamburger-nav {
   position: fixed;
-  top: 4rem;
+  top: 6.5rem;
   left: 100%;
   display: inline-block;
+  height: 100vh;
   width: 100%;
   padding-top: 1.5rem;
-  border-top: 5px solid var(--Sky-Blue);
   transition: 0.4s;
+  background: #fff;
 }
 
 .hamburger-nav.is-active {
@@ -183,20 +195,16 @@ nav {
 }
 
 .hamburger-nav ul li {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .hamburger-nav ul li a {
   display: block;
-  font-family: "Promixa Nova";
+  font-family: "Promixa Nova", Arial, Helvetica;
   font-size: 1.8rem;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.045rem;
   font-weight: 600;
   color: var(--Black);
-}
-
-.hamburger-nav ul li a:nth-last-of-type(2) {
-  color: red;
 }
 
 .nav-cta {
@@ -213,24 +221,61 @@ nav {
   margin: 0 auto;
   margin-left: 36px;
   border-radius: 3px;
-  font-family: "Promixa Nova";
+  font-family: "Promixa Nova", Arial, Helvetica;
   background-image: linear-gradient(
-    45deg,
+    -45deg,
     var(--Sky-Blue),
     var(--Yellow-Green)
   );
 }
 
-.nav-cta:hover {
-  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-}
-
 .nav-cta a {
-  color: ;
+  color: rgb(254, 1, 154);
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 .nav-cta.is-active {
   left: 0;
+}
+
+/* - MAIN- */
+
+/* ======
+HERO
+====== */
+.hero-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  font-family: "Promixa Nova";
+}
+
+.hero-text {
+  margin-top: 10rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.1rem;
+  font-family: "Promixa Nova Heavy";
+  line-height: 1;
+}
+
+.subtext-left,
+.subtext-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.subtext-left > p:last-child {
+  margin-left: 2.8rem;
+}
+
+.subtext-right > p:last-child {
+  margin-left: 2.8rem;
+}
+
+.fa-solid {
+  margin-right: 0.5rem;
 }
