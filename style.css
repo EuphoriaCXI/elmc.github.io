@@ -6,6 +6,11 @@
   --Font-Color: hsl(0, 0%, 18%);
 }
 
+@font-face {
+  font-family: "Promixa Nova";
+  src: url(./font/Proxima\ Nova\ Semibold.otf);
+}
+
 /* ======
 CSS RESET
 CREDIT TO: https://www.joshwcomeau.com/css/custom-css-reset/ 
@@ -42,7 +47,6 @@ body {
   5. Improve text rendering
 */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -109,6 +113,11 @@ NAVAGATION
 .header-wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  font-family: "Source Sans Pro";
+}
+
+h1 {
+  font-family: "Promixa Nova";
 }
 
 nav {
@@ -179,10 +188,15 @@ nav {
 
 .hamburger-nav ul li a {
   display: block;
-  font-size: 1.5rem;
+  font-family: "Promixa Nova";
+  font-size: 1.8rem;
+  letter-spacing: -0.025rem;
+  font-weight: 600;
   color: var(--Black);
-  text-align: center;
-  font-weight: 700;
+}
+
+.hamburger-nav ul li a:nth-last-of-type(2) {
+  color: red;
 }
 
 .nav-cta {
@@ -199,30 +213,22 @@ nav {
   margin: 0 auto;
   margin-left: 36px;
   border-radius: 3px;
-  background: hsla(113, 96%, 81%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(113, 96%, 81%, 1) 0%,
-    hsla(188, 90%, 51%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(113, 96%, 81%, 1) 0%,
-    hsla(188, 90%, 51%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(113, 96%, 81%, 1) 0%,
-    hsla(188, 90%, 51%, 1) 100%
+  font-family: "Promixa Nova";
+  background-image: linear-gradient(
+    45deg,
+    var(--Sky-Blue),
+    var(--Yellow-Green)
   );
 }
 
+.nav-cta:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
 .nav-cta a {
-  color: white;
-  font-weight: 700;
+  color: ;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .nav-cta.is-active {
