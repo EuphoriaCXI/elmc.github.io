@@ -127,7 +127,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -176,6 +176,10 @@ NAVAGATION
 
 .hamburger.is-active::after {
   transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.hamburger-nav-wrapper {
+  padding-top: 1rem;
 }
 
 .hamburger-nav {
@@ -230,7 +234,11 @@ NAVAGATION
 }
 
 .nav-cta a {
-  color: rgb(254, 1, 154);
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
   font-size: 1.2rem;
   font-weight: bold;
 }
