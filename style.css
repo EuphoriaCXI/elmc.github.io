@@ -188,10 +188,17 @@ NAVAGATION
   padding-top: 1.5rem;
   transition: 0.4s;
   background: #fff;
+  z-index: 4;
 }
 
 .hamburger-nav.is-active {
   left: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.hamburger-nav-wrapper {
+  background-color: red;
 }
 
 .hamburger-nav ul li a {
@@ -222,6 +229,7 @@ NAVAGATION
     var(--Sky-Blue),
     var(--Yellow-Green)
   );
+  z-index: 3;
 }
 
 .nav-cta a {
@@ -240,6 +248,7 @@ NAVAGATION
 HERO
 ====== */
 .hero-wrapper {
+  position: relative;
   max-width: 1440px;
   margin: 2.5rem auto 0;
   padding: 0 1.5rem;
@@ -249,8 +258,22 @@ HERO
 .hero-text {
   font-size: 1.8rem;
   letter-spacing: -0.1rem;
-  font-family: "Promixa Nova Heavy";
   line-height: 1;
+  color: var(--Font-Color);
+}
+
+.hero-text h1::after {
+  content: "";
+  background: url(./images/LINE-4.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(95%) contrast(80%);
+  position: absolute;
+  top: 11.6%;
+  right: 0;
+  left: 5.9%;
+  bottom: 0;
 }
 
 .subtext {
@@ -264,6 +287,7 @@ HERO
   align-items: center;
   margin-top: 1rem;
   font-size: 1.2rem;
+  color: var(--Font-Color);
 }
 
 .subtext-left > p:last-child {
