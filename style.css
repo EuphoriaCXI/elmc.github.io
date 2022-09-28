@@ -54,6 +54,7 @@ CREDIT TO: https://www.joshwcomeau.com/css/custom-css-reset/
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 /*
@@ -375,7 +376,7 @@ CLIENT
   background-color: hsl(147, 57%, 75%);
   font-size: 1.1rem;
   border-radius: 6px;
-  padding: 5.5rem 2rem 2rem 2rem;
+  padding: 3.3rem 2rem 2rem 2rem;
 }
 
 .benefit1 h3 {
