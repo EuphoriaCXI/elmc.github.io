@@ -4,6 +4,12 @@
   --Sky-Blue: hsl(196, 56%, 70%);
   --Black: hsl(0, 100%, 0%);
   --Font-Color: hsl(0, 0%, 18%);
+  --white-gradient:
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 @font-face {
@@ -16,6 +22,16 @@
   src: url(./font/proxima-nova/Proxima\ Nova\ Bold.otf);
   font-weight: 300;
   font-style: normal;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-600px);
+  }
+  
+  100% {
+    transform: translateX(400px);
+  }
 }
 
 /* ======
@@ -319,3 +335,28 @@ HERO
   );
   color: #fff;
 }
+
+/* ======
+CLIENT
+====== */
+.client-wrapper {
+  position: relative;
+  margin: 2.5rem auto 0;
+  font-family: "Promixa Nova";
+}
+
+.client-wrapper h2 {
+  text-align: center;
+}
+
+.slide-track {
+  display: flex;
+  gap: 1rem;
+  width: calc(250px * 14);
+}
+
+.slide {
+  padding: 1rem;
+  animation: scroll 13s linear infinite backwards;
+}
+
