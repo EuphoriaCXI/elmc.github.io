@@ -4,12 +4,6 @@
   --Sky-Blue: hsl(196, 56%, 70%);
   --Black: hsl(0, 100%, 0%);
   --Font-Color: hsl(0, 0%, 18%);
-  --white-gradient:
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
 }
 
 @font-face {
@@ -20,15 +14,13 @@
 @font-face {
   font-family: "Promixa Nova Heavy";
   src: url(./font/proxima-nova/Proxima\ Nova\ Bold.otf);
-  font-weight: 300;
-  font-style: normal;
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(-600px);
   }
-  
+
   100% {
     transform: translateX(400px);
   }
@@ -213,10 +205,6 @@ NAVAGATION
   z-index: 2;
 }
 
-.hamburger-nav-wrapper {
-  background-color: red;
-}
-
 .hamburger-nav ul li a {
   display: block;
   font-family: "Promixa Nova", Arial, Helvetica;
@@ -347,16 +335,72 @@ CLIENT
 
 .client-wrapper h2 {
   text-align: center;
+  color: #848484;
+}
+
+.client-wrapper h2 span {
+  text-align: center;
+  opacity: 0.7;
 }
 
 .slide-track {
   display: flex;
   gap: 1rem;
   width: calc(250px * 14);
+  color: #848484;
 }
 
 .slide {
   padding: 1rem;
-  animation: scroll 13s linear infinite backwards;
+  animation: scroll 25s linear infinite backwards;
 }
 
+.testimonial-wrapper {
+  position: relative;
+  margin: 2.5rem auto 0;
+  font-family: "Promixa Nova";
+  padding: 0 1.5rem;
+}
+
+.testimonial-wrapper h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.benefit1 {
+  margin: 0 auto;
+  background-color: hsl(147, 57%, 75%);
+  font-size: 1.1rem;
+  border-radius: 6px;
+  padding: 5.5rem 2rem 2rem 2rem;
+}
+
+.benefit1 h3 {
+  margin-top: 14rem;
+  font-size: 2.5rem;
+  width: 80%;
+  line-height: 1;
+}
+
+.benefit1 p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  font-size: 1.15rem;
+}
+
+.benefit1::after {
+  content: "";
+  background: url(./images/undraw_handcrafts_house.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  width: 100%;
+  position: absolute;
+  top: 25.6%;
+  right: 0;
+  left: 28.5%;
+  bottom: 0;
+}
