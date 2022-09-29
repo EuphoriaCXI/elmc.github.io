@@ -9,11 +9,13 @@
 @font-face {
   font-family: "Promixa Nova";
   src: url(./font/Proxima\ Nova\ Semibold.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Promixa Nova Heavy";
   src: url(./font/proxima-nova/Proxima\ Nova\ Bold.otf);
+  font-display: swap;
 }
 
 @keyframes scroll {
@@ -365,10 +367,9 @@ CLIENT
 }
 
 .testimonial-wrapper h2 {
-  width: 100%;
   text-align: center;
+  font-size: 2rem;
   margin-bottom: 2rem;
-  font-size: 1.8rem;
 }
 
 .benefit {
@@ -453,31 +454,60 @@ STEPS
   position: relative;
   margin: 2.5rem auto 0;
   font-family: "Promixa Nova";
-  padding: 0rem 1.5rem 15rem;
-}
-.process-wrapper h2 {
-  text-align: center;
+  padding: 0rem 1.5rem 2rem;
 }
 
-.process-wrapper h2::after {
-  content: "";
-  background: url(./images/ARROW-25.png);
-  background-repeat: no-repeat;
-  background-size: 10%;
-  transform: rotate(350deg);
-  width: 100%;
-  position: absolute;
-  top: 9%;
-  right: 0;
-  left: 51%;
-  bottom: 0;
+.process-wrapper h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.elm {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(-45deg, #7928ca, #ff0080);
 }
 
 .process-1 {
   text-align: center;
-  margin-top: 13rem;
+  margin-top: 2rem;
 }
 
+.process-1 p:nth-child(1) {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  color: #fff;
+  background: linear-gradient(-45deg, var(--Sky-Blue), var(--Yellow-Green));
+  margin-top: 2rem;
+}
+
+.process-1 p:nth-child(2) {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  background-image: linear-gradient(
+    -45deg,
+    var(--Sky-Blue),
+    var(--Yellow-Green)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.process-1 p:nth-child(3) {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
 .process-1 p:nth-child(4) {
+  margin-top: 0.5rem;
   text-align: start;
+  color: #848484;
 }
