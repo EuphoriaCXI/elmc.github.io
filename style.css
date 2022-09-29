@@ -128,19 +128,22 @@ NAVAGATION UTILITES
 ====== */
 
 img {
-  width: 135px;
-  margin-left: -1.7rem;
+  width: 80px;
+  margin-left: -1rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   padding: 0rem 2rem;
+  background-color: white;
+  /* border-bottom: 1px solid rgba(154, 148, 148, 0.5); */
 }
 
 /* ======
@@ -189,7 +192,7 @@ NAVAGATION
 
 .hamburger-nav {
   position: fixed;
-  top: 6.5rem;
+  top: 4.3rem;
   left: 100%;
   display: inline-block;
   height: 100vh;
@@ -202,7 +205,6 @@ NAVAGATION
 
 .hamburger-nav.is-active {
   left: 0;
-  background-color: #fff;
   z-index: 2;
 }
 
@@ -252,6 +254,10 @@ NAVAGATION
 /* ======
 HERO
 ====== */
+.hero-container {
+  margin-top: 8rem;
+}
+
 .hero-wrapper {
   position: relative;
   max-width: 1440px;
@@ -438,4 +444,40 @@ CLIENT
   right: 0;
   left: 22%;
   bottom: 0;
+}
+
+/* ======
+STEPS
+====== */
+.process-wrapper {
+  position: relative;
+  margin: 2.5rem auto 0;
+  font-family: "Promixa Nova";
+  padding: 0rem 1.5rem 15rem;
+}
+.process-wrapper h2 {
+  text-align: center;
+}
+
+.process-wrapper h2::after {
+  content: "";
+  background: url(./images/ARROW-25.png);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  transform: rotate(350deg);
+  width: 100%;
+  position: absolute;
+  top: 9%;
+  right: 0;
+  left: 51%;
+  bottom: 0;
+}
+
+.process-1 {
+  text-align: center;
+  margin-top: 13rem;
+}
+
+.process-1 p:nth-child(4) {
+  text-align: start;
 }
