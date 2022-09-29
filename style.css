@@ -339,11 +339,6 @@ CLIENT
   color: #848484;
 }
 
-.client-wrapper h2 span {
-  text-align: center;
-  opacity: 0.7;
-}
-
 .slide-track {
   display: flex;
   gap: 1rem;
@@ -366,42 +361,81 @@ CLIENT
 .testimonial-wrapper h2 {
   width: 100%;
   text-align: center;
-  margin-top: 6rem;
   margin-bottom: 2rem;
   font-size: 1.8rem;
 }
 
-.benefit1 {
+.benefit {
   margin: 0 auto;
   background-color: hsl(147, 57%, 75%);
   font-size: 1.1rem;
   border-radius: 6px;
   padding: 3.3rem 2rem 2rem 2rem;
+  margin-bottom: 2rem;
 }
 
-.benefit1 h3 {
+.benefit-heading {
+  margin-top: 12rem;
+}
+
+.benefit p:nth-child(1) {
+  font-size: 2rem;
+  width: 70%;
+}
+
+.b-pic-2 {
+  background-color: hsl(179, 57%, 75%);
+}
+
+.benefit h3 {
   margin-top: 14rem;
   font-size: 2.5rem;
   width: 80%;
   line-height: 1;
 }
 
-.benefit1 p {
+.benefit p {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 80%;
   font-size: 1.15rem;
 }
 
-.benefit1::after {
+.benefit::after {
   content: "";
   background: url(./images/undraw_handcrafts_house.svg);
   background-repeat: no-repeat;
   background-size: 40%;
   width: 100%;
   position: absolute;
-  top: 25.6%;
+  top: 9%;
   right: 0;
   left: 28.5%;
+  bottom: 0;
+}
+
+.b-pic-2::after {
+  content: "";
+  background: url(./images/undraw_handcrafts_growth.svg);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  width: 100%;
+  position: absolute;
+  top: 40.7%;
+  right: 0;
+  left: 32.5%;
+  bottom: 0;
+}
+
+.b-pic-3::after {
+  content: "";
+  background: url(./images/undraw_handcrafts_travel.svg);
+  background-repeat: no-repeat;
+  background-size: 53%;
+  width: 100%;
+  position: absolute;
+  top: 72.3%;
+  right: 0;
+  left: 22%;
   bottom: 0;
 }
