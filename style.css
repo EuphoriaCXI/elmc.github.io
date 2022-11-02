@@ -128,14 +128,9 @@ ul li {
 /* ======
 NAVAGATION UTILITES
 ====== */
-
-.nav-logo img {
-  width: 100px;
-  margin-left: -1rem;
-}
-
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -156,6 +151,13 @@ NAVAGATION
   margin: 0 auto;
 }
 
+.nav-logo img {
+  width: 80px;
+}
+
+.nav-phone {
+  width: 30px;
+}
 .menu {
   display: none;
 }
@@ -271,7 +273,7 @@ HERO
 
 .hero-wrapper::before {
   content: "";
-  background: url(./images/linh-pham-9M7jfE3BglQ-unsplash.jpg);
+  background: url(./images/Daisys.jpg);
   background-repeat: no-repeat;
   background-size: 200%;
   position: absolute;
@@ -289,20 +291,6 @@ HERO
   line-height: 1;
   color: var(--Font-Color);
 }
-
-/* .hero-text h1::after {
-  content: "";
-  background: url(./images/LINE-4.png);
-  background-repeat: no-repeat;
-  background-size: 90%;
-  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
-    brightness(95%) contrast(80%);
-  position: absolute;
-  top: 11.6%;
-  right: 0;
-  left: 5.9%;
-  bottom: 0;
-} */
 
 .dropbtn {
   display: inline-block;

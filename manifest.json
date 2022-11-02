@@ -1,0 +1,7 @@
+{
+  "name": "ELM Cleaning",
+  "short_name": "ELM",
+  "start_url": "/index.html",
+  "background_color": "#FFF",
+  "display": "standalone"
+}
