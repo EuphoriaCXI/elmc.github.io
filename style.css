@@ -129,8 +129,8 @@ ul li {
 NAVAGATION UTILITES
 ====== */
 
-img {
-  width: 80px;
+.nav-logo img {
+  width: 100px;
   margin-left: -1rem;
 }
 
@@ -263,9 +263,24 @@ HERO
 .hero-wrapper {
   position: relative;
   max-width: 1440px;
-  margin: 2.5rem auto 0;
-  padding: 0 1.5rem;
+  margin: -4rem auto 0;
+  /* padding: 0 1.5rem; */
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
   font-family: "Promixa Nova";
+}
+
+.hero-wrapper::before {
+  content: "";
+  background: url(./images/linh-pham-9M7jfE3BglQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 .hero-text {
@@ -275,7 +290,7 @@ HERO
   color: var(--Font-Color);
 }
 
-.hero-text h1::after {
+/* .hero-text h1::after {
   content: "";
   background: url(./images/LINE-4.png);
   background-repeat: no-repeat;
@@ -287,32 +302,51 @@ HERO
   right: 0;
   left: 5.9%;
   bottom: 0;
+} */
+
+.dropbtn {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid var(--Bright-Blue);
+  border-radius: 6px;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  padding: 0.7rem 12rem 0.7rem 1rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  background-image: linear-gradient(
+    -45deg,
+    var(--Sky-Blue),
+    var(--Yellow-Green)
+  );
+  color: white;
 }
 
-.subtext {
-  margin-top: 1.3rem;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.subtext-left,
-.subtext-right {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: var(--Font-Color);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.subtext-left > p:last-child {
-  margin-left: 2.8rem;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.subtext-right > p:last-child {
-  margin-left: 2.8rem;
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-.fa-solid {
-  margin-right: 0.5rem;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .subtext-btn a {

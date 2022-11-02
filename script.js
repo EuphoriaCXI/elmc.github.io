@@ -7,4 +7,4 @@ menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("is-active");
   mobileMenu.classList.toggle("is-active");
   navCta.classList.toggle("is-active");
-});
+});t
